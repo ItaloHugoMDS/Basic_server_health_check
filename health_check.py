@@ -36,8 +36,8 @@ def main():
     message_body = "Please check your system and resolve the issue as soon as possible."    # The body of the email.
 
     if errors:  # Checking if errors occurred.
-        for error in errors:    # If the errors occurred, the message returned by the error will be used as the subject
-            # of the email.
+        for error in errors:    # If the errors occurred, the message returned and the error message will be used as the
+            # subject of the email.
             message = generate_email(message_sender, message_receiver, error, message_body)    # Generating the message
             # to be transmitted over SMTP.
             send_email(message, email_host)    # Sending the message over SMTP connection.
