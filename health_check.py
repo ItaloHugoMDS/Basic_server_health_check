@@ -31,8 +31,8 @@ def main():
     host = "192.168.0.1"    # This is the server host, this host will be used to check if it's resolved on '127.0.0.1'.
     email_host = "localhost"    # The email SMTP host.
     errors = health_checks(host)    # Executing the checks.
-    message_sender = "automation@example.com"   # The address from which the message will  be sent from.
-    message_receiver = "student-04-330ff6fc5950@example.com"    # The address from which the message will be sent to.
+    message_sender = "sender@example.com"   # The address from which the message will  be sent from.
+    message_receiver = "receiver@example.com"    # The address from which the message will be sent to.
     message_body = "Please check your system and resolve the issue as soon as possible."    # The body of the email.
 
     if errors:  # Checking if errors occurred.
